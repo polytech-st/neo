@@ -1,1 +1,18 @@
-/* roma goooooy */
+                                                                                                                                                                                                                                                                                                                                                                                /* kolya goooooy */
+
+.body{
+    background-color:aquamarine;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    
+}
+
+.header-menu{
+    background-color:aqua;
+    border: 1px solid black;
+    border-collapse: collapse;
+    row-gap: 10%;
+}
+
