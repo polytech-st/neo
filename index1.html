@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>France - Eiffel Tower</title>
+  <style>
+    /* Загальні стилі */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Верхній блок з затемненням */
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('D:\\neo\\images\\France.jpg') no-repeat center center/cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 30px 50px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      font-size: 14px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      cursor: pointer;
+    }
+
+    .hero-text {
+      text-align: center;
+      margin-bottom: 160px;
+    }
+
+    .hero-text h1 {
+      font-size: 64px;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .hero-text h2 {
+      font-size: 28px;
+      font-weight: 350;
+      margin: 10px 0;
+    }
+
+    .scroll {
+      margin-top: 20px;
+      font-size: 12px;
+    }
+.hero-text1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    /* Основна секція */
+    .main-content {
+  background-color: #2c6666;
+  padding: 60px 0;
+  display: flex;
+  justify-content: flex-end; /* вирівнює вправо */
+  align-items: center;
+}
+
+.image-box {
+  padding: 10px;
+  background-color: #1e1e1e; /* рамка */
+  margin-right: 60px; /* відступ від правого краю */
+}
+
+.image-box img {
+  width: 500px;
+  max-width: 100%;
+  display: block;
+}
+    /* Футер */
+    .footer {
+    background: url('D:\\neo\\images\\gr.jpg') no-repeat center center/cover;
+    color: white;
+      padding: 40px 20px 20px;
+      
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-col {
+      flex: 1 1 180px;
+    }
+
+    .footer-col h4 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 5px;
+    }
+
+    .footer-col p,
+    .footer-col a {
+      font-size: 14px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-col .icons span {
+      font-size: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 12px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Головний екран -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="nav">
+        <div class="logo">
+          <strong>Great</strong><br>
+          <small>Cities of the World</small>
+        </div>
+        <ul class="menu">
+          <li>ГОЛОВНА</li>
+          <li>ПРО МІСТА</li>
+          <li>ГАЛЕРЕЯ</li>
+          <li>ЦІКАВІ ФАКТИ</li>
+        </ul>
+      </div>
+
+      <div class="hero-text">
+        <h1>FRANCE</h1>
+        <h2>Eiffel Tower</h2>
+    
+        <div class="scroll">ГОРТАЙТЕ ВНИЗ</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Основна секція з зображенням -->
+  <section class="main-content">
+    <div class="image-box">
+      <img src="D:\\neo\\images\\France1.jpg" alt="Eiffel Tower">
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Св. Августин</h4>
+        <p>"Світ - це книга, і ті, хто не подорожує, читають лише одну сторінку."</p>
+      </div>
+      <div class="footer-col">
+        <h4>МЕНЮ</h4>
+        <ul>
+          <li>Головна</li>
+          <li>Про місто</li>
+          <li>Галерея</li>
+          <li>Цікаві факти</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>МІСТА</h4>
+        <ul>
+          <li>Париж, Франція</li>
+          <li>Афіни, Греція</li>
+          <li>Сідней, Австралія</li>
+          <li>Ріо-де-Жанейро, Бразилія</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>КОНТАКТИ</h4>
+        <p>E-MAIL:<br><a href="mailto:neo.com.ua@gmail.com">neo.com.ua@gmail.com</a></p>
+        <p>РОБОЧИЙ ЧАС:<br>ПН - ПТ: 9
