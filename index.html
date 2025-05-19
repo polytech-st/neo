@@ -1,11 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подорожуй світом</title>
+  <style>
+
+
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #0d1f20; color: white; }
+    header { background: #3a817e; display: flex; align-items: center; justify-content: space-between; padding: 20px 40px; }
+    header h1 { font-size: 1.8em; color: #ffffff; }
+    nav ul { display: flex; list-style: none; gap: 20px; }
+    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+    .hero { text-align: center; background: linear-gradient(to bottom, #3a817e, #174543); padding: 40px; }
+    .hero img { max-width: 90%; border-radius: 10px; box-shadow: 0 0 110px #ffffff; }
+
+    .gallery-layout {
+      display: flex;
+      padding: 40px;
+
+      gap: 20px;
+      background: #174543;
+    }
+    .gallery-left {
+      flex: 2;
+    }
+    .gallery-left img {
+      width: 100%; height: 100%; object-fit: cover; border-radius: 10px;
+    }
+    .gallery-right {
+      flex: 3;
+      display: grid;
+
+      row-gap: 0px;
+      gap: 0px;
+    }
+    .gallery-right a:nth-child(3) {
+      grid-column: 1 / span 2;
+    }
+    .gallery-right img {
+      width: 100%; height: 100%; object-fit: cover; border-radius: 10px;
+    }
+
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      background: #1a3a3a;
+      padding: 40px;
+    }
+    .stat {
+      text-align: center;
+      font-size: 3em;
+      margin: 20px;
+      font-weight: bold;
+    }
+    .stat small {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.4em;
+      font-weight: normal;
+      color: #ccc;
+    }
+    .scroll {
+      margin-top: 60px;
+      font-size: 12px;
+    }
+    .map { width: 100%; height: 500px; }
+    /* Футер */
+    
+    .footer {
+      background-color: #295f5f;
+      color: white;
+      padding: 40px 20px 20px;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-col {
+      flex: 1 1 180px;
+    }
+
+    .footer-col h4 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 5px;
+    }
+
+    .footer-col p,
+    .footer-col a {
+      font-size: 14px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-col .icons span {
+      font-size: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Great Cities</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Про міста</a></li>
+        <li><a href="#">Галерея</a></li>
+        <li><a href="#">Цікаві факти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="images/BigBen.jpg" alt="London" style="width: 65%;" >
+    <h2 class="scroll">ГОРТАЙТЕ ВНИЗ</h2>
+  </section>
+
+  <section class="gallery-layout">
+    <div class="gallery-left">
+      <a href="pages/location2.html">
+        <img src="images/FranceTower.png" alt="France" style="height: 100%; width: 70%;">
+      </a>
+    </div>
+    <div class="gallery-right" style="padding-bottom: 0%; margin: 0;">
+      <a href="pages/location1.html" style="width: 330px;height: 300px; ">
+        <img src="images/Greece.png" alt="Greece" style="width: 330px;height: 300px;">
+      </a>  
+      <a href="pages/location4.html"style="width: 330px;height: 330px;"> 
+        <img src="images/Brazil.png" alt="Brazil" style="width: 330px;height: 300px;">
+      </a>
+      <a href="pages/location3.html" alt="Hungary" style="width: 760px; height: 300px;">
+        <img src="images/HungaryParlament.png" alt="Hungary" style ="width: 760px; height: 310px;" >
+      </a>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat">195<small>ВІДОМИХ МІСТ НА САЙТІ</small></div>
+    <div class="stat">60+<small>ЦІКАВИХ ФАКТІВ ПРО ПОДОРОЖІ</small></div>
+    <div class="stat">4<small>ОСІБ У НАШІЙ КОМАНДІ</small></div>
+    <div class="stat">1000+<small>ФОТО У НАШІЙ ГАЛЕРЕЇ</small></div>
+    <div class="stat">7<small>КОНТИНЕНТІВ ДЛЯ НАТХНЕННЯ</small></div>
+  </section>
+  <section>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127624.36802317094!2d30.392608062338374!3d50.45003361967282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50b376e2ff%3A0x9890f7a204ad6055!2z0JrRgNCw0YHQvdC-0LLRgdGM0LrQsCDQp9C10YDQvdC-0YHRgtGMLCDQp9C10YDQvdC-0YHRgtGM0LrQsCDQvtCx0Lsu!5e0!3m2!1suk!2sua!4v1683229615794!5m2!1suk!2sua" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="display: block; border: none; margin: 0; padding: 0;"></iframe>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Св. Августин</h4>
+        <p>"Світ - це книга, і ті, хто не подорожує, читають лише одну сторінку."</p>
+      </div>
+      <div class="footer-col">
+        <h4>МЕНЮ</h4>
+        <ul>
+          <li>Головна</li>
+          <li>Про місто</li>
+          <li>Галерея</li>
+          <li>Цікаві факти</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>МІСТА</h4>
+        <ul>
+          <li>Париж, Франція</li>
+          <li>Афіни, Греція</li>
+          <li>Сідней, Австралія</li>
+          <li>Ріо-де-Жанейро, Бразилія</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>КОНТАКТИ</h4>
+        <p>E-MAIL:<br><a href="mailto:neo.com.ua@gmail.com">neo.com.ua@gmail.com</a></p>
+        <p>РОБОЧИЙ ЧАС:<br>ПН - ПТ: 9:00-18:00</p>
+      </div>
+    </div>
+  </footer>
     
+    </div>
+  </footer>
 </body>
 </html>
